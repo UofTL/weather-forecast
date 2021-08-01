@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/*
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    background-image: url(./images/image#3.jpg);
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+html {
+    min-height: 100%;
+}
+*/
+
+html,
+body {
+    height: 100%;
+    color: #212529;
+}
+
+body {
+    font-family: 'Lobster', cursive;
+}
+
+header {
+    min-height: 70px;
+    display: flex;
+    width: 100%;
+    background: linear-gradient(135deg, #b3e2ff 10%, #b3ffd0 100%);
+}
+
+h1 {
+    color: white;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#currentDay {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 3px;
+    background: linear-gradient(135deg, #b3e2ff 30%, #b3ffd0 100%, #00ddff 10%);
+    border: 1px solid #dfdfdf;
+}
+
+.blockHeading {
+    display: flex;
+    align-items: center;
+}
+
+.uv span {
+    background-color: #dc3545;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+#forcast .days div {
+    padding: 5px;
+    background: linear-gradient(135deg, #b3e2ff 10%, #b3ffd0 100%);
+    color: white;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#cities {
+    background-color: #f8f9fa;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#cities h3 {
+    margin: 0 0 0 5px;
+    padding: 10px 0;
+}
+
+#search {
+    display: flex;
+    margin-left: 5px;
+}
+
+#search input {
+    border: 1px solid #dfdfdf;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    width: 60%;
+}
+
+#search button {
+    background: linear-gradient(135deg, #b3e2ff 10%, #b3ffd0 100%);
+    cursor: pointer;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    border: 0px solid transparent;
+}
+
+#search button img {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#presetCities {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 5px 20px 5px;
+    background-color: white;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+}
+
+#presetCities button {
+    border: 1px solid #dfdfdf;
+    padding: 20px;
+    cursor: pointer;
+    background-color: white;
+}
+
+#searchError {
+    height: 18px;
+    margin-left: 5px;
+    color: #ff00ee;
+}
+
+#presetCities button.wait,
+#search button.wait {
+    cursor: progress;
+}
+
+@media only screen and (min-width: 768px) {
+    #container {
+        display: flex;
+        align-items: stretch;
+        min-height: calc( 100% - 70px);
+    }
+    #forcast h2,
+    #forcast .days {
+        padding: 0 20px;
+    }
+    #forcast .days {
+        display: flex;
+        justify-content: space-between;
+    }
+    #forcast .days div {
+        width: calc(20% - 20px);
+    }
+    #cities {
+        min-width: 25%;
+    }
+    #weather {
+        min-width: 75%;
+    }
+    #currentDay,
+    #forcast {
+        min-height: 40%;
+    }
+}
+
+@media only screen and (min-width: 1120px) {
+    #forcast .days div {
+        width: calc(20% - 40px);
+    }
+}
