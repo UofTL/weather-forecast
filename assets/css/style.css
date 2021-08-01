@@ -2,15 +2,34 @@
 /*Not sure why the background image does not display*/
 body {
     font-family: 'Lobster', cursive;
-    background-image: url("../images/image-3.jpg");
+    /*background:linear-gradient(135deg, #b3e2ff 10%, #b3ffd0);
+    
+    background-image: url("../images/image-3.jpg");*/
 }
 
 /*all the colore should be a nuance of blue sky, blue sea*/
 header {
-    min-height: 70px;
+    padding: 20px 35px;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/nuage-2.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    z-index: 9999;
+      /*   background: linear-gradient(135deg, #b3e2ff 10%, #b3ffd0 100%);*/
+}
+
+.footer-text,
+.header-text {
     width: 100%;
-    background: linear-gradient(135deg, #b3e2ff 10%, #b3ffd0 100%);
+    text-align: center;
+    font-size: 10px;
+    color: white;
 }
 
 h1 {
@@ -45,8 +64,9 @@ h1 {
 
 #forcast .days div {
     padding: 5px;
-    background: linear-gradient(135deg, #b3e2ff 10%, #b3ffd0 100%);
-    color: #030303;
+   /* background: linear-gradient(135deg, #b3e2ff 10%, #b3ffd0 100%);*/
+   background-image: url("../images/image-3.jpg");
+    color: white;
     border-radius: 10px;
     margin: 5px;
     text-align: center;
@@ -54,7 +74,7 @@ h1 {
 }
 
 #cities {
-    position: center;
+    margin-top: 90px;
     background-color: #f8f9fa;
     padding: 8px;
     box-sizing: border-box;
