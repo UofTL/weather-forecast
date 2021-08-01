@@ -97,8 +97,7 @@ $("#forcast .days").html("");
     `<img src="https://openweathermap.org/img/w/${result.list[i].weather[0].icon}.png" alt="${result.list[i].weather[0].description}" width='50' height='50'>` +
     `<p class="temperature">Temp: ${result.list[i].main.temp}&nbsp;°C</p>` +
     `<p class="humidity">Humidity: ${result.list[i].main.humidity}&nbsp;%"</p>` +
-    `<p class="wind_speed">Wind Speed:  ${mph(result.list[0].wind.speed)} MPH</p>` +
-    `<p class="uv">UV Index: ${result.value}</p>` +
+    `<p class="wind_speed">Wind Speed:  ${mph(result.list[0].wind.speed)} MPH</p>`+
     '</div>');
 }
     $("#forcast .days").append(forcastBlock(i));

@@ -1,5 +1,5 @@
 Live URL:https://uoftl.github.io/weather-forecast/
-Report URL:https://github.com/UofTL/weather-forecast.git
+Repo URL:https://github.com/UofTL/weather-forecast.git
 
 # 06 Server-Side APIs: Weather Dashboard
 

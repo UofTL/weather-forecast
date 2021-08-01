@@ -2,7 +2,7 @@
 /*Not sure why the background image does not display*/
 body {
     font-family: 'Lobster', cursive;
-    background-image: url("../images/image#3.jpg");
+    background-image: url("../images/image-3.jpg");
 }
 
 /*all the colore should be a nuance of blue sky, blue sea*/
@@ -11,7 +11,6 @@ header {
     display: flex;
     width: 100%;
     background: linear-gradient(135deg, #b3e2ff 10%, #b3ffd0 100%);
-    background-image: url("../images/nuage#2.jpg");
 }
 
 h1 {
@@ -55,9 +54,12 @@ h1 {
 }
 
 #cities {
+    position: center;
     background-color: #f8f9fa;
     padding: 8px;
     box-sizing: border-box;
+    height: 60%;
+    width: 60%;
 }
 
 #cities h3 {
