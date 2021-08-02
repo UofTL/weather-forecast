@@ -1,24 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 /*Not sure why the background image does not display*/
+
 body {
     font-family: 'Lobster', cursive;
-    /*background:linear-gradient(135deg, #b3e2ff 10%, #b3ffd0);
-    
-    background-image: url("../images/image-3.jpg");*/
+    /*background:linear-gradient(135deg, #b3e2ff 10%, #b3ffd0);*/
+    background-image: url("../images/drop-3.jpg");
 }
 
-/*all the colore should be a nuance of blue sky, blue sea*/
+
+/*all the colors should be a nuance of blue sky, blue sea*/
+
 header {
     padding: 20px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
+    /*opacity: 0.2;*/
     top: 0;
-    background-image: url("../images/image-3.jpg");
+    background-image: url("../images/drop-3.jpg");
     background-position: 80%;
     background-attachment: fixed;
-      /*   background: linear-gradient(135deg, #b3e2ff 10%, #b3ffd0 100%);*/
+    /*background: linear-gradient(135deg, #b3e2ff 10%, #b3ffd0 100%);*/
 }
 
 .footer-text,
@@ -26,7 +30,7 @@ header {
     width: 100%;
     text-align: center;
     font-size: 10px;
-    color: black;
+    color: white;
 }
 
 h1 {
@@ -42,7 +46,10 @@ h1 {
     margin: 20px;
     padding: 20px;
     border-radius: 3px;
-    background: linear-gradient(135deg, #b3e2ff 30%, #b3ffd0 100%);
+    color: white;
+    /*background: linear-gradient(135deg, #b3e2ff 30%, #b3ffd0 100%);*/
+    background-image: url("../images/drop-3.jpg");
+    opacity: ;
     border: 1px solid #dfdfdf;
 }
 
@@ -51,7 +58,9 @@ h1 {
     align-items: center;
 }
 
+
 /* the color should be pop pink*/
+
 .uv span {
     background-color: #ff00ee;
     border-radius: 5px;
@@ -61,18 +70,19 @@ h1 {
 
 #forcast .days div {
     padding: 5px;
-   /* background: linear-gradient(135deg, #b3e2ff 10%, #b3ffd0 100%);*/
-   background-image: url("../images/image-3.jpg");
+    /*background: linear-gradient(135deg, #b3e2ff 10%, #b3ffd0 100%);*/
+    background-image: url("../images/drop-3.jpg");
     color: white;
     border-radius: 10px;
     margin: 5px;
     text-align: center;
     font-family: 'Lobster', cursive;
+    border: 1px solid #dfdfdf;
 }
 
 #cities {
     margin-top: 90px;
-    background-color: #f8f9fa;
+    /*background-color: #f8f9fa;*/
     padding: 8px;
     box-sizing: border-box;
     height: 60%;
@@ -82,6 +92,7 @@ h1 {
 #cities h3 {
     margin: 0 0 0 5px;
     padding: 10px 0;
+    color: white;
 }
 
 #search {
@@ -115,7 +126,6 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 
 #searchError {
     height: 18px;
