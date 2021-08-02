@@ -63,17 +63,21 @@ cityId = result.id;
         $("#currentDay").append(`<p class="humidity"> Humidity: ${result.list[0].main.humidity} %</p>`);
         $("#currentDay").append(`<p class="wind_speed">Wind Speed:  ${mph(result.list[0].wind.speed)} MPH</p>`);
 
+
     $.ajax({
     url: `https://api.openweathermap.org/data/2.5/uvi?appid=${apiKey}&lat=` + result.city.coord.lat + "&lon=" + result.city.coord.lon,
     success: function(result) {
         $("#currentDay").append(`<p class="uv">UV Index: <span>${result.value}</span></p>`);
         $('button').removeClass('wait');
         $('button').attr('disabled', false);
+        $("#currentDay").append(`<p class="card-footer text-muted">Latest Update: 1 minute ago</p>`);
+        $("#currentDay").append(`<a href="https://openweathermap.org/" class="btn btn-primary"><strong>Open Weather</strong></a>`);
         },
     error: function(xhr, ajaxOptions, thrownError) {
         $("#currentDay").append(`<p class="uv">UV Index: <span>Data not available</span></p>`);
         $('button').removeClass('wait');
         $('button').attr('disabled', false);
+        
     },
 //define error message for all var
 error: function(xhr, ajaxOptions, thrownError) {
@@ -82,6 +86,9 @@ error: function(xhr, ajaxOptions, thrownError) {
     $("#currentDay").append(`<p class="humidity"> Humidity: Data not available</p>`);
     $("#currentDay").append(`<p class="wind_speed">Wind Speed:  Data not available</p>`);
     $("#currentDay").append(`<p class="uv">UV Index:  Data not available</p>`);
+    //
+    $("#currentDay").append(`<p class="card-footer text-muted">Latest Update: 1 minute ago</p>`);
+    $("#currentDay").append(`<a href="https://openweathermap.org/" class="btn btn-primary"><strong>Open Weather</strong></a>`);
     $('button').removeClass('wait');
     $('button').attr('disabled', false);
     }
